@@ -41,9 +41,9 @@ function(file="tactile.pdf", pt=11, paper="special", font="BRL") {
 
 # Body code Starts here
 #Preparing braille font
-sysfonts::font.add("BRL", system.file("fonts/BRAILLE1.ttf", package="SwellR"))
-sysfonts::font.add("SWL", system.file("fonts/Swell-Braille.ttf", package="SwellR"))
-sysfonts::font.add("TIMES", system.file("fonts/times.ttf", package="SwellR"))
+sysfonts::font.add("BRL", system.file("fonts/BRAILLE1.ttf", package="tactileR"))
+sysfonts::font.add("SWL", system.file("fonts/Swell-Braille.ttf", package="tactileR"))
+sysfonts::font.add("TIMES", system.file("fonts/times.ttf", package="tactileR"))
 
 #Generating Braille PDF
 pdf(file, pointsize=pt, paper=paper)
