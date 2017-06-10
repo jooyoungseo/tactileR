@@ -1,0 +1,25 @@
+Package: tactileR
+Type: Package
+Title: Converting an R Graphical Output into a Braille Ready-to-Print PDF File for Visually Impaired R Users Optimized for Swell Form Machine and braille embosser.
+Version: 0.1.0
+Date: 2017-06-10
+Author: A. JooYoung Seo [aut, cre], Tsan-Kuang Lee [ctb]
+Maintainer: JooYoung Seo <jooyoung@psu.edu>
+Authors@R: c(person("JooYoung", "Seo", role=c("aut", "cre"), email="jooyoung@psu.edu"),
+    person("Tsan-Kuang", "Lee", email = "developer@tklee.com", role = "ctb"))
+Description: tactile is intended to support for blind R users who have an access to Swell Form Machine or braille embosser.
+Repository: Github
+License: GPL-2
+Depends:
+    R (>= 3.2.0)
+Imports:
+    showtext,
+    sysfonts
+Suggests:
+    showtext
+VignetteBuilder: knitr
+URL: https://github.com/sjystu/tactileR
+BugReports: https://github.com/sjystu/tactileR/issues
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
