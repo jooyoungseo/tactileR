@@ -1,0 +1,4 @@
+name: Tidy HTML Format
+description: >
+  Template to create tidy HTML page.
+create_dir: true

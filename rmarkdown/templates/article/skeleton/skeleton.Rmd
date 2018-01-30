@@ -1,0 +1,54 @@
+---
+title             : '`r readLines("title.txt")[1]`'
+shorttitle        : '`r readLines("title.txt")[2]`'
+
+author: 
+  - name          : "JooYoung Seo"
+    affiliation   : "1"
+    corresponding : yes    # Define only one corresponding author
+    address       : "Learning, Design, and Technology, 301 Keller Building, University Park, PA 16802, USA"
+    email         : "jooyoung@psu.edu"
+
+affiliation:
+  - id            : "1"
+    institution   : "The Pennsylvania State University"
+
+author_note: '`r knitr::knit_child("preamble/authorNote.txt")`'
+
+abstract: '`r knitr::knit_child("preamble/abstract.txt")`'
+
+keywords          : '`r knitr::knit_child("preamble/keywords.txt")`'
+wordcount         : '`r knitr::knit_child("preamble/wordcount.txt")`'
+
+bibliography      : ["bib/r-references.bib", "bib/references.bib"]
+
+figsintext        : no
+figurelist        : yes
+tablelist         : yes
+footnotelist      : no
+lineno            : no
+mask              : no
+
+class             : "man"
+output            : papaja::apa6_pdf
+---
+
+```{r setup, include = FALSE, echo = FALSE}
+library(knitr)
+library("papaja")
+
+# Seed for random number generation
+set.seed(42)
+```
+
+`r knitr::knit_child("main.txt")`
+
+\newpage
+
+# References
+```{r create_r-references}
+r_refs(file = "bib/r-references.bib")
+```
+
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}

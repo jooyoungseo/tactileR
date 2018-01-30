@@ -1,0 +1,28 @@
+# Goal for this Week
+At the end of this week, I am expected to complete the following tasks:
+
+1. [first](#g1)
+2. [second](#g2)
+3. [third](#g3)
+
+# Justification
+The following reasonings align with the three goals proposed above.
+
+## 1. first {#g1}
+
+
+## 2. second {#g2}
+
+
+## 3. third {#g3}
+
+
+# Time Table
+
+**Goal** | **Weekday** | **Target-hr** | **Completed-hr** | **Note**
+:--- | :--- | :--- | :--- | :---
+G2 | Mon | 2 | - | -
+G2 | Tue | 2 | - | -
+G1 | Wed | 2 | - | -
+G3 | Thu | 2 | - | -
+G3 | Fri | 2 | - | -
