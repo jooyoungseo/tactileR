@@ -11,9 +11,8 @@ Description: tactile is intended to support for blind R users who have an access
 Repository: Github
 License: GPL-2
 Depends:
-    R (>= 3.2.0)
-    papaja,
-    rmarkdown,
+    R (>= 3.2.0),
+    rmarkdown
 Imports:
     showtext,
     sysfonts
