@@ -113,10 +113,6 @@ brl_end()
 graphic object through the functions. barplot, interaction plot,
 regression plot, network graph, wordcloud, etc.
 
-## Author
-
-[JooYoung Seo](Mailto:jooyoung@psu.edu)
-
 ## Limitation
 
 Currently this package does not support braille translation. This means

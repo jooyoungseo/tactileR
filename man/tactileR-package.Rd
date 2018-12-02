@@ -4,9 +4,9 @@
 \name{tactileR-package}
 \alias{tactileR}
 \alias{tactileR-package}
-\title{tactileR: Converting an R Graphical Output into a Braille Ready-to-Print PDF File for Visually Impaired R Users Optimized for Swell Form Machine and Braille Embosser}
+\title{tactileR: Converting R Graphics into a Braille Ready-to-Print PDF}
 \description{
-Supporting for blind R users who have an access to Swell Form Machine or braille embosser.
+Supporting for blind or visually impaired R users who have an access to Swell Form Machine or braille embosser to print R graphics in a tactile form with Braille font embedded.
 }
 \seealso{
 Useful links:

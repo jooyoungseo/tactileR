@@ -99,10 +99,6 @@ brl_end()
 
 *Note*: Histogram and boxplot are just examples. You can feed any graphic object through the functions. barplot, interaction plot, regression plot, network graph, wordcloud, etc.
 
-## Author
-
-[JooYoung Seo](Mailto:jooyoung@psu.edu)
-
 ## Limitation
 
 Currently this package does not support braille translation. This means you cannot embed any special symbols, math symbols, contracted braille, and non-roman alphabet characters. This issue will be addressed later by employing Liblouis translator.
