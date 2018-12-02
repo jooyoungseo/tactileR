@@ -5,6 +5,15 @@
 
 [![License: GPL
 v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
+<!-- badges: start --> [![Travis build
+status](https://travis-ci.org/jooyoungseo/tactileR.svg?branch=master)](https://travis-ci.org/jooyoungseo/tactileR)
+[![AppVeyor build
+status](https://ci.appveyor.com/api/projects/status/github/jooyoungseo/tactileR?branch=master&svg=true)](https://ci.appveyor.com/project/jooyoungseo/tactileR)
+[![Codecov test
+coverage](https://codecov.io/gh/jooyoungseo/tactileR/branch/master/graph/badge.svg)](https://codecov.io/gh/jooyoungseo/tactileR?branch=master)
+[![CRAN
+status](https://www.r-pkg.org/badges/version/tactileR)](https://cran.r-project.org/package=tactileR)
+<!-- badges: end -->
 
 ## Description
 
@@ -39,21 +48,25 @@ install.packages("tactileR")
 
 ## Arguments
 
-| Argument | Description                                                                                                                                                                                                                     |
-| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| file     | A character string giving the filename where the image is to be saved. The default file name is “tactile.pdf” if not given.                                                                                                     |
-| pt       | Numeric value specifying braille font size for a created file. Default is 11.                                                                                                                                                   |
-| paper    | Character value setting paper size of output pdf file. Default is “special”.                                                                                                                                                    |
+| Argument |                                                                                                           Description                                                                                                           |
+| :------- | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| file     |                                                   A character string giving the filename where the image is to be saved. The default file name is “tactile.pdf” if not given.                                                   |
+| pt       |                                                                          Numeric value specifying braille font size for a created file. Default is 11.                                                                          |
+| paper    |                                                                          Character value setting paper size of output pdf file. Default is “special”.                                                                           |
 | font     | Character value for font family. Available options include “BRL” for “BRAILLE1.ttf” (Braille Normal) and “SWL” for “Swell-Braille.ttf” (Swell Braille), and “TIMES” for “times.ttf” (Times New Roman). Default is set to “BRL”. |
 
 ## Details
 
 *Note*: This function optimizes for both 11*11 and 11*8.5 swell touch
 papers. When printing a generated braille pdf, just remember two things:
-1. check “Fit” in the print dialog box (the shortcut key is ALT+F). 2.
-Check “Landscape” in the print dialog box as well. - For boxplot, you do
-not need to check the “Landscape,” just leave it as a “Portray.”
-However, please check the “Fit” all the time.
+
+1.  check “Fit” in the print dialog box (the shortcut key is ALT+F).
+2.  Check “Landscape” in the print dialog box as well.
+
+<!-- end list -->
+
+  - For boxplot, you do not need to check the “Landscape,” just leave it
+    as a “Portray.” However, please check the “Fit” all the time.
 
 ## Information
 
