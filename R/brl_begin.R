@@ -25,30 +25,29 @@
 #' @return Nothing within the R session, but a pdf file will be created in the user's working directory.
 
 #' @examples
-#' brl_begin(file='tactile.pdf', pt=11, paper='special', font='BRL')
+#' brl_begin(file = "tactile.pdf", pt = 11, paper = "special", font = "BRL")
 #' hist(airquality$Ozone)
 #' brl_end()
 #' # The braille ready-to-print pdf version will be created in your working directory.
 #' # Print it out and run the swell touch paper through swell form heating machine.
-
 #' @author JooYoung Seo, \email{jooyoung@psu.edu}
 
-#Function starts
+# Function starts
 brl_begin <-
-function(file="tactile.pdf", pt=11, paper="special", font="BRL") {
+  function(file = "tactile.pdf", pt = 11, paper = "special", font = "BRL") {
 
-# Body code Starts here
-#Preparing braille font
-sysfonts::font.add("BRL", system.file("fonts/BRAILLE1.ttf", package="tactileR"))
-sysfonts::font.add("SWL", system.file("fonts/Swell-Braille.ttf", package="tactileR"))
-sysfonts::font.add("TIMES", system.file("fonts/times.ttf", package="tactileR"))
+    # Body code Starts here
+    # Preparing braille font
+    sysfonts::font.add("BRL", system.file("fonts/BRAILLE1.ttf", package = "tactileR"))
+    sysfonts::font.add("SWL", system.file("fonts/Swell-Braille.ttf", package = "tactileR"))
+    sysfonts::font.add("TIMES", system.file("fonts/times.ttf", package = "tactileR"))
 
-#Generating Braille PDF
-grDevices::pdf(file, pointsize=pt, paper=paper)
-showtext::showtext.begin()
-#Optimizing graphic size
-graphics::par(cex=1.2, cex.main=1.2, cex.lab=1.2, cex.axis=1.2, cex.sub=1.2, mar=c(5,5,3,2), pch=20, family=font)
+    # Generating Braille PDF
+    grDevices::pdf(file, pointsize = pt, paper = paper)
+    showtext::showtext.begin()
+    # Optimizing graphic size
+    graphics::par(cex = 1.2, cex.main = 1.2, cex.lab = 1.2, cex.axis = 1.2, cex.sub = 1.2, mar = c(5, 5, 3, 2), pch = 20, family = font)
 
-# Body code ends
-}
-#Function Ends
+    # Body code ends
+  }
+# Function Ends

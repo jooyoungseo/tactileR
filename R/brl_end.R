@@ -21,22 +21,21 @@
 #' @return Nothing within the R session, but a pdf file will be created in the user's working directory.
 
 #' @examples
-#' brl_begin(file='tactile.pdf', pt=11, paper='special', font='BRL')
+#' brl_begin(file = "tactile.pdf", pt = 11, paper = "special", font = "BRL")
 #' hist(airquality$Ozone)
 #' brl_end()
 #' # The braille ready-to-print pdf version will be created in your working directory.
 #' # Print it out and run the swell touch paper through swell form heating machine.
-
 #' @author JooYoung Seo, \email{jooyoung@psu.edu}
 
-#Function starts
+# Function starts
 brl_end <-
-function() {
+  function() {
 
-# Body code Starts here
-showtext::showtext.end()
-grDevices::dev.off()
+    # Body code Starts here
+    showtext::showtext.end()
+    grDevices::dev.off()
 
-# Body code ends
-}
-#Function Ends
+    # Body code ends
+  }
+# Function Ends
